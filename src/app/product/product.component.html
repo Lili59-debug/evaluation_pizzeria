@@ -1,0 +1,17 @@
+  <ion-list>
+    <ion-item class="ion-text-center" lines="none" *ngFor="let item of products">
+      <ion-grid>
+        <ion-row class="ion-justify-content-center">
+          <h1><span>{{item.titre}}</span></h1>
+        </ion-row>
+        <ion-row>
+          <ion-img src="{{item.image}}"></ion-img>
+        </ion-row>
+        <ion-row>
+          <ion-text>{{item.description}}</ion-text>
+        </ion-row>
+        <ion-button expand="block">Voir la carte <ion-icon slot="end" name="add-circle"></ion-icon>
+        </ion-button>
+      </ion-grid>
+    </ion-item>
+  </ion-list>

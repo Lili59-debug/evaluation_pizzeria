@@ -1,0 +1,53 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="header1">
+    <ion-text>
+      Appelez nous au 03 20 30 40 50
+      <a class="connexion" [routerLink]="['/espace-client']"
+        ><i class="fas fa-sign-in-alt"></i>Se connecter</a
+      >
+    </ion-text>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header class="ion-no-border">
+  <ion-toolbar class="header2">
+    <ion-thumbnail id="logo">
+      <a [routerLink]="['/home']"><img src="../assets/images/logo.jpg" /></a>
+    </ion-thumbnail>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Ajout de plats</h1>
+  <a href="/liste">Voir tous les plats</a><br />
+  <form id="loginForm" action="/ajout" method="post">
+    <ion-label position="stacked">Nom du plat</ion-label>
+    <ion-input></ion-input>
+    <ion-label position="stacked">Description</ion-label>
+    <ion-input></ion-input>
+    <ion-label position="stacked">Prix</ion-label>
+    <ion-input type="number"></ion-input>
+    <ion-label position="stacked">Image</ion-label>
+    <ion-input></ion-input>
+
+    <ion-select placeholder="Pizza">
+      <ion-select-option value="pizza">Pizza</ion-select-option>
+      <ion-select-option value="pates">Pâtes</ion-select-option>
+      <ion-select-option value="salades">Salades</ion-select-option>
+      <ion-select-option value="desserts">Desserts</ion-select-option>
+      <ion-select-option value="boissons">Boissons fraîches</ion-select-option>
+      <ion-select-option value="vins">Vins</ion-select-option>
+    </ion-select>
+
+    <button type="submit" id="btn-submit">Ajouter</button>
+  </form>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="footer">
+    <ion-text>© 2020 Pizzeria La Botega | Mentions légales | CGV</ion-text>
+  </ion-toolbar>
+</ion-footer>

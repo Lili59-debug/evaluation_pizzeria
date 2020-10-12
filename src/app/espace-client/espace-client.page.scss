@@ -33,22 +33,39 @@ ion-menu-button {
 * espace-client.page.scss, ajout-age.scss )
 */
 
-.connexion {
-  color: white;
+#btn-submit {
+  width: 100%;
+  text-align: center;
+}
+#checkButton {
+  margin-top: 10px;
+}
+ion-checkbox {
+  border: 1px solid black;
+  margin-right: 10px;
+  float: left;
 }
 ion-content {
   --padding-start: 20px;
   --padding-end: 20px;
+}
+ion-item,
+ion-input {
+  --color: black;
+  --placeholder-color: black;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+ion-label {
+  margin-top: 10px;
+  color: black;
+  --color: black;
 }
 ion-menu-button {
   border: 1px solid #c00;
   color: #c00;
   border-radius: 10px;
   margin-right: 20px;
-}
-ion-toolbar.header1 {
-  --background: #c00;
-  --color: white;
 }
 ion-toolbar.header2 {
   --background: white;
@@ -57,20 +74,14 @@ ion-toolbar.footer {
   --background: #c00;
   --color: white;
 }
+#log {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
 #logo {
+  margin-left: auto;
+  margin-right: auto;
   height: 100px;
   width: 100px;
-  margin-left: 20px;
-}
-
-a {
-  text-decoration: none;
-}
-
-input {
-  border: solid 1px #555;
-}
-
-ion-footer {
-  margin-top: 10px;
 }

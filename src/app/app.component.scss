@@ -23,7 +23,7 @@ ion-menu.md ion-note {
 }
 
 ion-menu.md ion-list#inbox-list {
-  border-bottom: 1px solid var(--ion-color-step-150, #d7d8da);
+  border-bottom: 1px solid white;
 }
 
 ion-menu.md ion-list#inbox-list ion-list-header {
@@ -116,4 +116,18 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
+}
+
+/* 
+* 
+* ================= CODE AJOUTÉ CI-DESSOUS =================
+* ( voir aussi global.scss, app.component.scss, folder.page.scss, 
+* espace-client.page.scss, ajout-age.scss )
+*/
+
+ion-label.text-menu {
+  color: #c00;
+}
+ion-menu.sidemenu-text {
+  background-color: white;
 }
